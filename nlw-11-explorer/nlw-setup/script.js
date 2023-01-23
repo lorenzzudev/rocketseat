@@ -23,7 +23,6 @@ function save() {
   localStorage.setItem("NLWSetup@Habits", JSON.stringify(nlwSetup.data));
 }
 
-// se objecto existir, carrega as informações, se não, cria objeto vazio
 const data = JSON.parse(localStorage.getItem("NLWSetup@Habits")) || {};
 nlwSetup.setData(data);
 nlwSetup.load();
